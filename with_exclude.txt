@@ -1,0 +1,51 @@
+
+> Task :rpc-server-ktor:dependencies
+
+------------------------------------------------------------
+Project ':rpc-server-ktor'
+------------------------------------------------------------
+
+compileClasspath - Compile classpath for null/main.
++--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22
+|    \--- org.jetbrains:annotations:13.0
++--- io.ktor:ktor-server-cio-jvm:2.3.8
+|    +--- io.ktor:ktor-server-host-common:2.3.8
+|    |    \--- io.ktor:ktor-server-host-common-jvm:2.3.8
+|    |         +--- io.ktor:ktor-server-core:2.3.8
+|    |         +--- io.ktor:ktor-http-cio:2.3.8
+|    |         |    \--- io.ktor:ktor-http-cio-jvm:2.3.8
+|    |         |         +--- io.ktor:ktor-network:2.3.8
+|    |         |         |    \--- io.ktor:ktor-network-jvm:2.3.8
+|    |         |         |         \--- io.ktor:ktor-utils:2.3.8
+|    |         |         |              \--- io.ktor:ktor-utils-jvm:2.3.8
+|    |         |         |                   +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1
+|    |         |         |                   \--- io.ktor:ktor-io:2.3.8
+|    |         |         |                        \--- io.ktor:ktor-io-jvm:2.3.8
+|    |         |         |                             \--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1
+|    |         |         \--- io.ktor:ktor-http:2.3.8
+|    |         \--- io.ktor:ktor-websockets:2.3.8
+|    |              \--- io.ktor:ktor-websockets-jvm:2.3.8
+|    |                   +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1
+|    |                   \--- io.ktor:ktor-http:2.3.8
+|    +--- io.ktor:ktor-http-cio:2.3.8 (*)
+|    +--- io.ktor:ktor-websockets:2.3.8 (*)
+|    \--- io.ktor:ktor-network:2.3.8 (*)
++--- org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.8.0
+\--- project :ktor-server-websockets
+     +--- io.ktor:ktor-server-websockets-jvm:2.3.8
+     |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1
+     |    +--- io.ktor:ktor-server-core:2.3.8
+     |    +--- io.ktor:ktor-websockets:2.3.8 (*)
+     |    \--- io.ktor:ktor-websocket-serialization:2.3.8
+     |         \--- io.ktor:ktor-websocket-serialization-jvm:2.3.8
+     |              +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1
+     |              +--- io.ktor:ktor-http:2.3.8
+     |              \--- io.ktor:ktor-serialization:2.3.8
+     \--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22 (*)
+
+(*) - Indicates repeated occurrences of a transitive dependency subtree. Gradle expands transitive dependency subtrees only once per project; repeat occurrences only display the root of the subtree, followed by this annotation.
+
+A web-based, searchable dependency report is available by adding the --scan option.
+
+BUILD SUCCESSFUL in 5s
+1 actionable task: 1 executed
