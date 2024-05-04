@@ -23,9 +23,9 @@ dependencies {
         exclude(group = "org.jetbrains.kotlinx", module = "kotlinx-coroutines-jdk8")
         exclude(group = "org.slf4j", module = "slf4j-api")
         // comment out these last three for trying it out
-//        exclude(group = "io.ktor", module = "ktor-server-core-jvm")
-//        exclude(group = "io.ktor", module = "ktor-http-jvm")
-//        exclude(group = "io.ktor", module = "ktor-serialization-jvm")
+        exclude(group = "io.ktor", module = "ktor-server-core-jvm")
+        exclude(group = "io.ktor", module = "ktor-http-jvm")
+        exclude(group = "io.ktor", module = "ktor-serialization-jvm")
     }
     implementation("io.ktor:ktor-server-cio-jvm:2.3.8") {
         isTransitive = true
